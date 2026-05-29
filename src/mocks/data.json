@@ -1,11 +1,11 @@
 {
   "products": [
-    { "id": "p1", "name": "Premium Wireless Headphones", "price": 299.99, "category": "Electronics", "status": "active" },
-    { "id": "p2", "name": "Ergonomic Office Chair", "price": 199.50, "category": "Furniture", "status": "active" },
-    { "id": "p3", "name": "Mechanical Keyboard", "price": 149.99, "category": "Electronics", "status": "active" },
-    { "id": "p4", "name": "Minimalist Desk Lamp", "price": 45.00, "category": "Lighting", "status": "draft" },
-    { "id": "p5", "name": "Ceramic Coffee Mug", "price": 18.00, "category": "Home Goods", "status": "active" },
-    { "id": "p6", "name": "Smart Fitness Watch", "price": 129.99, "category": "Electronics", "status": "archived" }
+    { "id": "p1", "name": "Premium Wireless Headphones", "price": 299.99, "category": "Electronics", "status": "active", "inventory": 23 },
+    { "id": "p2", "name": "Ergonomic Office Chair", "price": 199.50, "category": "Furniture", "status": "active", "inventory": 4 },
+    { "id": "p3", "name": "Mechanical Keyboard", "price": 149.99, "category": "Electronics", "status": "active", "inventory": 0 },
+    { "id": "p4", "name": "Minimalist Desk Lamp", "price": 45.00, "category": "Lighting", "status": "draft", "inventory": 11 },
+    { "id": "p5", "name": "Ceramic Coffee Mug", "price": 18.00, "category": "Home Goods", "status": "active", "inventory": 3 },
+    { "id": "p6", "name": "Smart Fitness Watch", "price": 129.99, "category": "Electronics", "status": "archived", "inventory": 7 }
   ],
   "orders": [
     { "id": "o1", "customerName": "Alice Johnson", "total": 344.99, "status": "processing", "createdAt": "2026-05-29T10:00:00Z" },

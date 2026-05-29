@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   category: string;
   status: 'active' | 'draft' | 'archived';
+  inventory: number;
 }
 
 export interface Order {

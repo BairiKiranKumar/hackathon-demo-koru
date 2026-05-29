@@ -1,0 +1,17 @@
+{
+  "products": [
+    { "id": "p1", "name": "Premium Wireless Headphones", "price": 299.99, "category": "Electronics", "status": "active" },
+    { "id": "p2", "name": "Ergonomic Office Chair", "price": 199.50, "category": "Furniture", "status": "active" },
+    { "id": "p3", "name": "Mechanical Keyboard", "price": 149.99, "category": "Electronics", "status": "active" },
+    { "id": "p4", "name": "Minimalist Desk Lamp", "price": 45.00, "category": "Lighting", "status": "draft" },
+    { "id": "p5", "name": "Ceramic Coffee Mug", "price": 18.00, "category": "Home Goods", "status": "active" },
+    { "id": "p6", "name": "Smart Fitness Watch", "price": 129.99, "category": "Electronics", "status": "archived" }
+  ],
+  "orders": [
+    { "id": "o1", "customerName": "Alice Johnson", "total": 344.99, "status": "processing", "createdAt": "2026-05-29T10:00:00Z" },
+    { "id": "o2", "customerName": "Bob Smith", "total": 199.50, "status": "shipped", "createdAt": "2026-05-28T14:30:00Z" },
+    { "id": "o3", "customerName": "Charlie Davis", "total": 18.00, "status": "delivered", "createdAt": "2026-05-27T09:15:00Z" },
+    { "id": "o4", "customerName": "Diana Miller", "total": 429.98, "status": "pending", "createdAt": "2026-05-29T11:45:00Z" },
+    { "id": "o5", "customerName": "Ethan Wilson", "total": 45.00, "status": "cancelled", "createdAt": "2026-05-26T16:20:00Z" }
+  ]
+}

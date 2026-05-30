@@ -45,6 +45,23 @@ Always use `.ai/` as the source of truth.
 - Prefer quality over quantity.
 - Avoid storing temporary information.
 
+## 6. Memory-First Investigation
+
+Memory is a search-space reduction tool.
+
+Memory does NOT replace code inspection.
+
+Always:
+
+1. Read memory first.
+2. Use memory to identify likely affected areas.
+3. Inspect only relevant files.
+4. Verify implementation before making changes.
+
+Avoid repository-wide exploration when memory already contains relevant knowledge.
+
+The goal is to reduce rediscovery, not eliminate validation.
+
 ---
 
 # Repository Structure
@@ -132,12 +149,13 @@ Process:
 
 1. Read ticket requirements.
 2. Read all memory files.
-3. Investigate relevant source code.
-4. Investigate existing implementations.
-5. Investigate APIs and data models.
-6. Investigate mock data if applicable.
-7. Identify dependencies.
-8. Identify blockers.
+3. Use memory to identify likely affected modules.
+4. Inspect only relevant source files.
+5. Verify existing implementations.
+6. Verify APIs and data models.
+7. Verify mock data if applicable.
+8. Identify dependencies.
+9. Identify blockers.
 
 If information is missing:
 
@@ -157,6 +175,10 @@ Implementation plan only.
 
 Do not implement code.
 
+Do not inspect unrelated features.
+
+Do not perform repository-wide analysis unless memory is insufficient or outdated.
+
 ---
 
 # Execution Mode
@@ -173,9 +195,10 @@ Before coding:
 
 1. Read task file.
 2. Read memory files.
-3. Inspect relevant source files.
-4. Verify current implementation patterns.
-5. Identify root cause or required changes.
+3. Use memory to identify implementation location.
+4. Inspect only implementation-related files.
+5. Verify current implementation patterns.
+6. Identify root cause or required changes.
 
 Implementation Rules:
 
@@ -192,6 +215,8 @@ Do not modify memory files.
 Do not archive tasks.
 
 Focus only on implementation.
+
+Do not rediscover architecture already documented in memory unless validation is required.
 
 ---
 
@@ -267,6 +292,13 @@ Process:
 4. Inspect integration changes.
 5. Update memory files if required.
 
+Important:
+
+- Inspect changed files first.
+- Avoid full repository rescans.
+- Update only knowledge affected by recent changes.
+- Do not regenerate memory from scratch.
+
 Only store reusable knowledge.
 
 Do not create tasks.
@@ -283,6 +315,7 @@ When generating implementation prompts:
 - Avoid repetition.
 - Avoid explanations.
 - Output actionable instructions only.
+- Use memory to narrow investigation scope before inspecting code.
 
 Always enforce:
 

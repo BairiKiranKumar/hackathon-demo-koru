@@ -95,7 +95,7 @@ api.dashboard.getStats()  → { totalProducts, totalOrders }
 | Feature | Hooks | Components |
 |---|---|---|
 | Dashboard | useDashboardStats | StatsCard, RecentOrdersTable |
-| Products | useProducts, useProduct | ProductListTable, ProductSearch |
+| Products | useProducts, useProduct | ProductListTable, ProductSearch, InventoryFilter |
 | Orders | useOrders, useOrder, useRecentOrders | OrderListTable |
 
 ---

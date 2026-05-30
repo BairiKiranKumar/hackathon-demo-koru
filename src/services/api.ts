@@ -46,6 +46,16 @@ export const api = {
         totalProducts: mockData.products.length,
         totalOrders: mockData.orders.length,
       };
-    }
+    },
+    getInventoryStats: async () => {
+      await delay(700);
+      const LOW_STOCK_THRESHOLD = 5;
+      const products = mockData.products as Product[];
+      return {
+        lowStock: products.filter(p => p.inventory > 0 && p.inventory <= LOW_STOCK_THRESHOLD).length,
+        outOfStock: products.filter(p => p.inventory === 0).length,
+        lowStockProducts: products.filter(p => p.inventory <= LOW_STOCK_THRESHOLD),
+      };
+    },
   }
 };
